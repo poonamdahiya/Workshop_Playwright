@@ -1,0 +1,26 @@
+{
+  "name": "Workshop-Playwright",
+  "version": "1.0.0",
+  "description": "Modern Cross Browser Testing in JavaScript using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "traditional": "playwright test tests/traditional.spec.js",
+    "traditional:original": "DEMO_SITE=original playwright test tests/traditional.spec.js",
+    "traditional:changed": "DEMO_SITE=changed playwright test tests/traditional.spec.js",
+    "visual": "playwright test tests/visual.spec.js --project=chromium",
+    "visual:original": "DEMO_SITE=original playwright test tests/visual.spec.js --project=chromium",
+    "visual:changed": "DEMO_SITE=changed playwright test tests/visual.spec.js --project=chromium"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@applitools/eyes-playwright": "^1.11.2",
+    "@playwright/test": "^1.19.1"
+  }
+}
